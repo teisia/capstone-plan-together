@@ -24,7 +24,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GoogleStrategy({
     clientID: '746466032586-fkn4lk9v4pccpa005accokik9u2m13cb.apps.googleusercontent.com',
     clientSecret: 'n52Pq21dadcVTiD44doP7eBE',
-    callbackURL: 'http://localhost:3000/auth/google/callback',
+    callbackURL: 'https://plan-together.herokuapp.com/auth/google/callback',
     passReqToCallback   : true
   },
   function(request, accessToken, refreshToken, profile, done) {
